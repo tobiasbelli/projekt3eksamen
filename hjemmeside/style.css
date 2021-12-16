@@ -1,0 +1,272 @@
+body {
+    background-color: rgb(243, 226, 226);
+    margin: auto;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+nav /*navigationsbar*/ {
+    display: flex;
+    flex-direction: row;
+    background-color: rgb(0, 0, 0);
+    justify-content: space-evenly;
+    width: 100%;
+}
+nav a{
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    font-size: 3vw;
+}
+
+.header{ grid-area: header; }
+.menu { grid-area: menu; }
+.main { grid-area: main; }
+.right { grid-area: right; }
+.left { grid-area: left; }
+.item7 { grid-area: item7; }
+.item1 { grid-area: item1; }
+.item2 { grid-area: item2; }
+.item3 { grid-area: item3; }
+.item4 { grid-area: item4; }
+.item5 { grid-area: item5; }
+.item6 { grid-area: item6; }
+
+.grid-container{
+    display:grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 1fr;
+    grid-template-areas: 
+    "main main"
+    "header header" 
+    "right right"
+    "menu menu"
+    "left left"
+    "item7 item7"
+    "item1 item1"
+    "item2 item2"
+    "item3 item3"
+    "item4 item4"
+    "item5 item5"
+    "item6 item6";
+    grid-gap: 10px;
+    background-color: rgb(243, 226, 226);
+    padding: 10px;
+}
+#ansigt { grid-area: ansigt; }
+#tekst { grid-area: tekst; }
+
+.top{
+    display:grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr;
+    grid-template-areas: 
+    "tekst ansigt";
+    grid-gap: 10px;
+    width: 100%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin: 0px;
+}
+.responsive{
+    width: 100%;
+    height: auto;
+}
+
+#kodning{
+    width: 100%;
+    max-width: 25rem;
+    height: auto;
+}
+
+#animation1{
+    width: 100%;
+    max-width: 25rem;
+    height: auto;
+}
+
+#dd{
+    width: 100%;
+    max-width: 25rem;
+    height: auto;
+}
+
+#portret{
+    width: 100%;
+    max-width: 25rem;
+    height: auto;
+}
+#redigerin{
+    width: 100%;
+    max-width: 25rem;
+    height: auto;
+}
+
+#app{
+    width: 100%;
+    max-width: 25rem;
+    height: auto;
+}
+
+#tekst4 {
+    text-align: center;
+}
+
+#tekst5 {
+    text-align: center;
+}
+
+#tekst6 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+#tekst7{
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.grid-container > div {
+    text-align: center;
+    padding: 20px;
+    font-size: 3vw;
+}
+#tekst2 { grid-area: tekst2; }
+#migmig { grid-area: migmig; }
+#tekst3 { grid-area: tekst3; }
+#tekst4 { grid-area: tekst4; }
+#tekst5 { grid-area: tekst5; }
+#tekst6 { grid-area: tekst6; }
+#tekst7 { grid-area: tekst7; }
+
+.top1{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: 
+    "tekst2 migmig"
+    "tekst3 tekst3"
+    "tekst4 tekst5"
+    "tekst6 tekst7";
+    grid-gap: 10px;
+    width: 100%;
+    padding-top: 4px;
+    margin: 0px;
+}
+#website{
+    width: 100%;
+    max-width: 25rem;
+    height: auto;
+}
+
+#grafik{
+    width: 100%;
+    max-width: 23rem;
+    height: auto;
+}
+
+#redigering{
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+}
+.top{
+    overflow: hidden;
+    background-image: url(billeder/vandet.jpeg);
+    background-position: center;
+    margin: -4px;
+    background-size: 100%;
+}
+#ansigt{
+    width: 80%;
+    height: auto;
+    justify-self: right;
+    margin: 2%;
+}
+#tekst{
+    font-size: 4vw;
+    margin: 2%;
+}
+#migmig{
+    width: 100%;
+    height: auto;
+}
+#tekst2{
+    font-size: 3vw;
+    margin: 2%;
+}
+.top1{
+    overflow: hidden;
+    justify-content: space-between;
+}
+#tekst3{
+    text-align: center;
+}
+.footer{
+    display: flex;
+    flex-direction: row;
+    background-color: black;
+    color: white;
+    position: fixed;
+    bottom: 0px;
+    width: 100%;
+}
+*{
+    box-sizing: border-box;
+}
+
+input[type=text], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+  }
+  
+.row{
+    display: flex;
+    justify-content: center;
+}
+
+  input[type=submit] {
+    background-color: black;
+    color:white;
+    padding: 12px 20px;
+    border: none;
+    cursor: pointer;
+  }
+
+  .container {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 10px;
+  }
+ 
+  .column {
+    justify-content: center;
+    width: 50%;
+    margin-top: 6px;
+    padding: 20px;
+  }
+
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  @media screen and (min-width: 700px){
+.grid-container{
+    display:grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 1fr;
+    grid-template-areas: 
+    "main left"
+    "header item7"
+    "right item1"
+    "menu item2"
+    "item3 item5"
+    "item4 item6";
+    grid-gap: 10px;
+    background-color: rgb(243, 226, 226);
+    padding: 10px;}
+  }
